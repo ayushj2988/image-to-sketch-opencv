@@ -10,7 +10,13 @@ Convert images into pencil-style sketches using Python and OpenCV.
 ## How it works
 The script converts an image to grayscale, applies Gaussian blur, and blends it to produce a pencil-sketch effect.
 
+## Web Demo
+A simple frontend allows users to upload an image and view the generated sketch directly in the browser.
+
+The frontend communicates with a Flask API backend using `fetch` and `FormData`.
+
 ## How to Run
 ```bash
 pip install opencv-python numpy
 python sketch.py
+
