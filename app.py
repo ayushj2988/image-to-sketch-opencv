@@ -1,10 +1,13 @@
 from flask import Flask, request, send_file, jsonify
+from flask_cors import CORS
 import cv2
 import numpy as np
 from sketch import image_to_sketch
 import io
 
 app = Flask(__name__)
+CORS(app)
+
 
 @app.route("/sketch", methods=["POST"])
 def sketch():
